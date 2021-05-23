@@ -11,6 +11,10 @@ import RxSwift{{/useRxSwift}}{{#useCombine}}
 #if canImport(Combine)
 import Combine
 #endif{{/useCombine}}{{#swiftUseApiNamespace}}
+#if canImport(AnyCodable)
+import AnyCodable
+#endif
+{{#description}}
 
 extension {{projectName}}API {
 {{/swiftUseApiNamespace}}
