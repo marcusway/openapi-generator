@@ -7,6 +7,9 @@
 
 import Foundation
 import PromiseKit
+#if canImport(AnyCodable)
+import AnyCodable
+#endif 
 
 open class StoreAPI {
     /**

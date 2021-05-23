@@ -6,6 +6,9 @@
 //
 
 import Foundation
+#if canImport(AnyCodable)
+import AnyCodable
+#endif 
 
 @objc open class FakeAPI : NSObject {
     /**

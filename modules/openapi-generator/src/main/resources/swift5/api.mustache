@@ -10,7 +10,10 @@ import PromiseKit{{/usePromiseKit}}{{#useRxSwift}}
 import RxSwift{{/useRxSwift}}{{#useCombine}}
 #if canImport(Combine)
 import Combine
-#endif{{/useCombine}}{{#swiftUseApiNamespace}}
+#endif{{/useCombine}}
+#if canImport(AnyCodable)
+import AnyCodable
+#endif{{#swiftUseApiNamespace}}
 
 extension {{projectName}}API {
 {{/swiftUseApiNamespace}}

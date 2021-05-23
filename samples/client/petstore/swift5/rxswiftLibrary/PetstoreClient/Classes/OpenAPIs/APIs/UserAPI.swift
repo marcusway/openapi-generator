@@ -7,6 +7,9 @@
 
 import Foundation
 import RxSwift
+#if canImport(AnyCodable)
+import AnyCodable
+#endif 
 
 open class UserAPI {
     /**
